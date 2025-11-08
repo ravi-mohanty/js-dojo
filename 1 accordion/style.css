@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: #7cf9e5;
+}
+
+.section {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.container{
+    max-height: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: rgb(52, 52, 23);
+    text-align: center;
+}
+
+.accordion {
+    max-width: 700px;
+    margin: auto;
+}
+
+.accordion-item {
+    border : 1px solid black;
+    padding: 20px;
+}
+.accordion-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.accordion-title h3 {
+    flex : 1;
+    font-size: 25px;
+}
+.accordion-title i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+                                                                             /* catch is here , at first we are not representing the accordion, we are checking if active is there then 
+                                                                             only it should be open in the next css we can see that  */
+
+.accordion_content{                                
+    display: none;
+}
+.accordion-title.active + .accordion_content{
+    display: block;
+}
+.accordion_content p {
+    color: red;
+    font-size: 25px;
+}
+.accordion-title.active i {
+    transform: rotate(180deg);
+}
