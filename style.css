@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    padding: 20px;
+}
+.random-color-generator-container{
+    display: flex;
+    gap: 10px;
+}
+.hex-color-container, .rgb-color-container{
+    min-height: 100vh;
+    flex: 1;
+}
+.hex-color-container button {
+    font-size: 20px;
+    background: goldenrod;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.rgb-color-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hex-color-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background: rgb(177, 29, 54);
+}
+.rgb-color-container{
+    background: gold;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.rgb-color-container button{                
+                                                                    /* as this is combining both the class and the element so it is more specific if we use 
+                                                                    only the name of the class provided to the btn it wont work less specificity  */
+   font-size: 20px;
+    background: goldenrod;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
