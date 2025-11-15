@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    padding : 15px;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.star-rating-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap:50px;
+    margin-bottom: 20px;
+}
+.fa-star::before{
+    content: '\f006';
+    font-size: 30px;
+}
+.selected-rating-container{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.selected-rating-container{
+    font-size: 20px;
+    font-weight: bold;
+}
+.fa-star::before{
+    color: gold;
+}

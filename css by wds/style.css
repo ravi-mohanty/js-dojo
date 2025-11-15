@@ -1,0 +1,17 @@
+* {
+  height: 100%;
+  width: 100%;
+}
+#parent{
+    background-color: aqua;
+    height: 400px;
+    width: 400px;
+}
+#child{
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+#parent::hover {
+  
+} 

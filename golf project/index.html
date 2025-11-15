@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head> <!--when we scroll than the nav bar is constant and the image that we are using is also constant {at the bg}-->
+
+<body>
+    <div id="nav"> <!--intreating : using nav will place the element at the top itself great na -->
+        <img src ="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg">
+
+        <h4>TOPTRACER RANGE</h4> <!--just put the tag name than put * 5{how many times we need to add it}-->
+        <h4>Gofl Lessopns</h4>
+        <h4>Adventure Golf</h4>
+        <h4>coffe shop</h4>
+        <h4>league</h4>
+        <!--display: inline property will by default will take the size of the element, if we put the size it will not work, and it will move in a line 
+        display : block it will start with new line, , leave the remaining space , we can provide height and width to it ,by defualt it will occupy the complete width
+        display : inline-block : it will by default will start from the same line , can provide both height and width to the block {having the property of both inline and block }
+        -->
+    </div> 
+    <div id="cursor"></div>  <!--div is defualt block level element-->
+    <div id="cursor_blur"></div>
+    <video controls autoplay muted loop src="https://assets.mixkit.co/videos/4273/4273-720.mp4">
+    </video><!--here inside the video tag use the controls else the video wont work -->
+    <div id="main"> <!--main is like a wrapper here is all the pages will be there-->
+       <div id="page1">
+          <h1>EAT.DRINK.PLAY.</h1>
+          <h3>WELCOME TO SIDCUP FAMILY GOLF!</h3>
+          <P>Sidcup Family Golf is a multipurpose golf facility loacated in Sidcup, South East London Passioanate about technology , player development and making golf fun and accessible to everyone.</P>
+        </div>
+        <div id="page2">
+         <div id="scroller">  <!--didnt understand why this is created like this-->
+           <div id="scroller-in">
+                <h4>TOPTRACER RANGE</h4>
+                </h4>GOFL LESSOPNS</h4>
+                </h4>ADVENTURE GOLF</h4>
+                </h4>COFFE SHOP</h4>
+            </div>
+            <div id="scroller-in"> <!--didnt understand why created 2 ids -->
+                 <h4>TOPTRACER RANGE</h4>
+                 </h4>GOFL LESSOPNS</h4>
+                 </h4>ADVENTURE GOLF</h4>
+                 </h4>COFFE SHOP</h4>
+            </div>
+         </div>
+        </div>
+    </div> <!--just used the #main n press entre it will automatically take the tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"></script> <!--js library for creating animations, its a library-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+         integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer">
+     </script>  <!--its a plugin of gsap-->
+     <script src="script.js"></script>   
+</body>
+
+
+</html>

@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+nav {
+    width: 20%;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+header h1 {
+    flex-grow: 1;  text-align: center;
+}
+
+.contact-btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 10px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.contact-btn:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.contact-btn i {
+    margin-right: 5px;
+}
+
+/* Font Awesome Icon Styling (replace with your preferred styles) */
+.fas {
+    font-size: 18px;
+}

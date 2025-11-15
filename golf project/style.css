@@ -1,0 +1,133 @@
+*{     /* we put the star mark so that it will cove the entire body */
+    margin: 0;
+    padding: 0; /* padding is used to create a space inside a constainer around the element */
+    box-sizing: border-box;
+    font-family: 'montserrate'; /* I forgot to put the inverted commas then the nav is not comming didnt understand the reason for this */
+    color: #ffff /* used for coloring the text */
+}
+html, body {
+    height: 100%;
+    width : 100%;
+}
+#cursor{
+   height: 20px;    /* didnt get why height and width is used , aslo need to know how z index works , and why here position is fixded*/
+   width: 20px;
+   background-color: #90c11e;
+   border-radius: 50%;
+   position: fixed;
+   z-index: 99;
+}
+#cursor_blur{
+   height: 250px;    /* didnt get why height and width is used , aslo need to know how z index works , and why here position is fixded*/
+   width: 250px;
+   background-color: #9912d3;
+   border-radius: 50%;
+   position: fixed;
+   filter: blur(70px);
+   z-index: 1; /* we are giving z index to make the element come forward */
+}
+ 
+#nav{
+    height: 130px;
+    width: 100%;
+    display: flex; /* all the elements are align in same line */
+    align-items: center; /* flex property : for y axis  to make centre*/
+    justify-content: flex-start; /* it will bring the ele. at the start of the container where u have applied the flex property. */
+    padding: 0 150px; /* {right and left} */
+    gap: 40px;
+    position: fixed;
+    z-index: 999;
+   }
+#nav img{  /*here we are pointing to the indiidual element */
+  height: 70px;
+}
+
+#nav h4{
+    text-transform: uppercase; 
+    font-weight: 300;
+}
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1; /*to make the video at the end {very last end} */
+ } 
+ #main{
+    background-color: rgba(0, 0, 0, 0.663) ;
+    }
+ #page1{
+    height: 100vh; /*making the content at the centre, dont know why vh is not working */
+    width: 100%;  /* as of now  we didnt give height and width to parent as it solely depends on the parent and parent is not get any height yet */
+    position: relative; /* need to check why this is given here ? */
+    display: flex;
+    align-items: center; /* y axis */
+    justify-content: center; /* x axis */
+   z-index: 10;
+    text-align: center; /* to make the text at centre */
+    flex-direction: column; /* here it is used to change the direction of the flex, flex is the property to divide the element into rows and columns */
+    }
+ #page1 h1{
+    font-weight: 900;
+    font-size: 100px;
+    position: relative;
+    }
+ #page1 h1::before{   /*please remember of taking the correct name of the page & /*this is used for creating pseudo text , here we are creating that border effect with this , this is actully placed brfore and after the text but by manupulating we are making it happen to 0verlap our text with 
+    with the help of position relative which we always apply to out parent element */ 
+    content: "EAT.DRINK.PLAY.";
+    color: #000;
+    position: absolute; /* we are putting position absolute , this is comparitive to the parent , hence it covers the parent entirely , but why are we using here dont know, as 
+    we have alredy created div named scroller without having any boundation of space than y are we using it ? */ 
+    top: -3px;
+    left: -2px;
+    -webkit-text-stroke: 3px #b9ef26;
+    z-index: -1;
+   }
+ #page1 h3{
+    font-weight: 700;   
+    font-size: 30px;
+    margin-bottom: 10px;
+   }
+ #page1 p{
+    font-weight: 200;
+    font-size: 10px;
+   }
+#page2{
+   height: 100vh;
+   width: 100%;
+   z-index: 10;
+}
+#scroller{
+   overflow-y: hidden;
+   overflow-x: auto; /*this will add a scroll bar, dont know how */
+   white-space: nowrap; /* this is used for making the paragraph if any into a single line , if any box is applied into it it will cross the  box */
+}
+#scroller h4{
+   display: inline-block; /* here used for making into a line */
+}
+#scroller-in{
+   display: inline-block;
+   white-space: nowrap;
+   animation-name: scroll;
+   animation-duration: 30s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+#scroller h4{
+   display: inline-block; /* here it is used for making all the h4 into the same line */
+   font-weight: 900;
+   font-family: gilroy;
+   font-size: 140px;
+   margin-right: 10px;
+   color: transparent; /* this particular thing make it transparent , white color will be removed */
+   -webkit-text-stroke: 2px rgb(132, 195, 38);
+}
+ 
+@keyframes scroll {
+   from{
+      transform: translate(0);
+   }
+   to{
+      transform: translate(-100%); /* need to check how animation actully works */
+   }
+}
